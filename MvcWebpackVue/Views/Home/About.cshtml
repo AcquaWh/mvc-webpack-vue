@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<div id="app-about" class="jumbotron">
+    <div class="container">
+        <h2>@ViewBag.Title.</h2>
+        <h3>@ViewBag.Message</h3>
+        <p>{{ anotherMessage }}</p>
+        <strong>npm run build (para cualquier cambio de codigo)</strong>
+        <vuetable ref="vuetable"
+        :fields="['name', 'nickname', 'email', 'gender']"
+        :api-mode="false"
+        :data="localData"></vuetable>
+    </div>
+    
+</div>
+
+
+@section scripts
+{
+    <script src="@Url.Content("~/public/dist/js/about.js")"></script>
+}

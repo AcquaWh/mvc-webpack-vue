@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    <div id="app-home" class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">{{ message }}</h1>
+            <p>{{anotherMessage}}</p>
+            <p><button class="btn btn-primary btn-lg" v-on:click="changeMessage" role="button">Change Message</button></p>
+            <p><a href="@Url.Action("About")">Go to About page</a></p>
+            
+        </div>
+            
+    </div>
+
+@section scripts
+{
+    <script src="@Url.Content("~/public/dist/js/home.js")"></script>
+}
