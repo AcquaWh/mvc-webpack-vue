@@ -1,9 +1,7 @@
 # .NET MVC, Webpack and Vue.js
 
-This project is an example to how to integrate .NET MVC with Webpack and Vue.js.
-
-After clone, you need to:
- - Install NuGet packages;
- - Install NPM packages - npm install;
- - Run css and js build at project root - npm run build;
- - Run Visual Studio Debug;
+Después de clonar, necesitas:
+ - Instalar los NuGet packages;
+ - Instalar NPM packages - npm install;
+ - Correr la build en el root del proyecto - npm run build;
+ - Correrlo en Visual Studio Debug
